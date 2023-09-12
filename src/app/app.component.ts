@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FileUploadService } from './services/file-upload.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'file-upload';
 
-  constructor() {}
+  constructor(private service: FileUploadService) {}
 }
